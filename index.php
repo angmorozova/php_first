@@ -6,12 +6,12 @@
 
     if(preg_match("/[0-9]/",$num)){
         echo '<table class="table table-striped app">';
-        echo '<tr><td>#</td><td>сумма</td><td>произ-ние</td><td>частное</td></tr>';
+        echo '<tr><td>Введенное число</td><td>#</td><td>сумма</td><td>произ-ние</td><td>частное</td></tr>';
 
         for($i=1;$i<=10;$i++){
             $division = ($num==0)? 'На ноль делить нельзя!' : $i/$num;
             echo '<tr>';
-            echo "<td>$i</td><td>".($i+$num)."</td><td>".($i*$num)."</td><td>".$division."</td>";
+            echo "<td>$num</td><td>$i</td><td>".($i+$num)."</td><td>".($i*$num)."</td><td>".$division."</td>";
             echo '</tr>';
         }
 
